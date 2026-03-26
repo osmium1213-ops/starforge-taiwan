@@ -29,7 +29,7 @@ export default function ContactSection() {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/jimmytsai1213/"
+          href="https://www.linkedin.com/in/jimmy-wen-chun-tsai/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 px-6 py-3 bg-forge-card border border-white/10 hover:border-forge-green/30 transition-colors group"
