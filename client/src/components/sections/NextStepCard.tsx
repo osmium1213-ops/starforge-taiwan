@@ -43,7 +43,9 @@ export default function NextStepCard() {
           LinkedIn
         </a>
         <a
-          href="mailto:osmium1213@gmail.com?subject=Request%3A%2090-Day%20Taiwan%20Pilot%20Brief&body=Hi%20Jimmy%2C%0A%0APlease%20send%20the%20full%2090-day%20Taiwan%20pilot%20brief.%0A%0ABest%2C"
+          href="https://t.me/JimmyTsai15"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block px-8 py-4 border border-forge-green/40 text-forge-green font-display font-semibold text-sm tracking-wider uppercase hover:bg-forge-green/10 transition-all"
           style={{ clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))" }}
         >
