@@ -15,7 +15,7 @@ const layers = [
       "Frieren demand index 30.3× (Parrot Analytics) — #1 in Taiwan. Perfect 5.0/5.0 on Bahamut ACG database.",
       "MSI × Frieren GPU: 8,237 page views on CoolPC, sold out. Validates anime × hardware premium demand at full price.",
       "Import duty 0% (HS 8471). Total tax burden ~5% VAT only. One of the lowest market entry barriers in APAC.",
-      "Ducky manufactures Starforge keyboards in Taipei (CES 2026). Lian Li (Starforge cases) is a Taiwan brand. Supply chain is already local.",
+      "Ducky (Starforge's keyboard partner) and Lian Li (Starforge's case supplier) are both Taiwan-based brands with local headquarters. Brand partnerships are already in-country.",
     ],
   },
   {

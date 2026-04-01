@@ -30,11 +30,11 @@ const whiteSpaceCards = [
   },
   {
     title: "Where Starforge Has White Space",
-    content: "No US gaming PC brand has Taiwan presence. Starforge has 6+ active anime IP collabs — more than any competitor. Zero full-system anime builds available in Taiwan. Ducky already manufactures Starforge keyboards in Taipei.",
+    content: "No US gaming PC brand has Taiwan presence. Starforge has 6+ active anime IP collabs — more than any competitor. Zero full-system anime builds available in Taiwan. Ducky (Starforge's keyboard partner) is a Taiwan-based brand.",
   },
   {
     title: "Supply Chain Is Already Here",
-    content: "Ducky (Starforge keyboard partner) HQ in Nangang, Taipei. Lian Li (Starforge case supplier) is a Taiwan brand. Two key supply chain partners are already local — the missing layer is go-to-market execution.",
+    content: "Ducky (Starforge keyboard partner) is a Taiwan brand, HQ in Nangang, Taipei. Lian Li (Starforge case supplier) is also a Taiwan brand. Two key brand partners are headquartered locally — the missing layer is go-to-market execution.",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function CompetitorTimeline() {
               style={{ clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px))" }}
             >
               <p className="text-sm text-forge-green/80 font-medium">Starforge Systems — 6+ Active Anime IP Collabs (CES 2026)</p>
-              <p className="text-xs text-forge-green/40 mt-1">Frieren, Chainsaw Man, Apothecary Diaries, JJK, Solo Leveling, Kaiju No.8 — Ducky keyboards manufactured in Taipei, Lian Li cases from Taiwan. No Asia distribution layer.</p>
+              <p className="text-xs text-forge-green/40 mt-1">Frieren, Chainsaw Man, Apothecary Diaries, JJK, Solo Leveling, Kaiju No.8 — Ducky (keyboard partner) and Lian Li (case supplier) are both Taiwan-based brands. No Asia distribution layer.</p>
             </div>
           </div>
         </div>

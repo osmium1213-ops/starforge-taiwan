@@ -65,10 +65,10 @@ const kpiData = [
   },
   {
     title: "Ducky × Starforge",
-    metric: "Made in Taipei",
-    context: "Ducky manufactures Starforge's anime collab keyboards. HQ in Nangang, Taipei — 2 hours from operator.",
+    metric: "HQ in Taipei",
+    context: "Ducky is Starforge's keyboard partner — a Taiwan brand headquartered in Nangang, Taipei. 2 hours from operator.",
     source: "CES 2026 Announcement",
-    detail: "At CES 2026, Starforge confirmed Ducky as the manufacturing partner for their anime IP keyboards (Frieren, Chainsaw Man, Apothecary Diaries). Ducky's headquarters is in Nangang, Taipei. Lian Li (Starforge's case supplier) is also a Taiwan brand.",
+    detail: "At CES 2026, Starforge confirmed Ducky as the keyboard partner for their anime IP collabs (Frieren, Chainsaw Man, Apothecary Diaries). Ducky is a Taiwan-based brand with headquarters in Nangang, Taipei. Lian Li (Starforge's case supplier) is also a Taiwan brand.",
   },
   {
     title: "Starforge Already Discussed",
