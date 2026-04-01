@@ -16,25 +16,25 @@ const timelineData = [
     { brand: "ASUS ROG", ip: "Hatsune Miku", detail: "Full product line. NT$17K premium. '初音稅' coined on PTT.", color: "text-red-400" },
     { brand: "MSI", ip: "Toy Story 30th", detail: "500 units, Taiwan-exclusive. Sold out.", color: "text-blue-400" },
     { brand: "AOC", ip: "Dan Da Dan", detail: "Monitor collaboration. Anime × display market entry.", color: "text-purple-400" },
-    { brand: "Razer", ip: "EVA-02 Peripherals", detail: "Keyboard, mouse, headset. Taiwan launch Jan 13, 2026.", color: "text-green-400" },
   ]},
   { year: "2026", events: [
-    { brand: "MSI", ip: "Frieren GPU (Teased)", detail: "Competitor pursuing one of Starforge's core IPs in Taiwan.", color: "text-blue-400" },
+    { brand: "Razer", ip: "EVA-02 Peripherals Launch", detail: "Keyboard, mouse, headset. Taiwan launch Jan 13. Cross-brand anime IP expansion continues.", color: "text-green-400" },
+    { brand: "MSI", ip: "Frieren GPU — Sold Out", detail: "CoolPC single GPU page: 8,237 views. Sold out. Validates anime × hardware premium demand in Taiwan.", color: "text-blue-400" },
   ]},
 ];
 
 const whiteSpaceCards = [
   {
     title: "What Competitors Validated",
-    content: "Anime × hardware sells at premium in Taiwan. ROG × EVA sold out instantly. Consumers pay NT$17K+ premiums. Industry-wide trend confirmed by Commercial Times.",
+    content: "Anime × hardware sells at premium in Taiwan. ROG × EVA sold out instantly. MSI × Frieren GPU sold out on CoolPC (8,237 page views). Consumers accept NT$17K+ premiums.",
   },
   {
     title: "Where Starforge Has White Space",
-    content: "No US gaming PC brand has Taiwan presence. Starforge has 6 active anime IP collabs — more than any competitor. No detected grey market competition.",
+    content: "No US gaming PC brand has Taiwan presence. Starforge has 6+ active anime IP collabs — more than any competitor. Zero full-system anime builds available in Taiwan. Ducky already manufactures Starforge keyboards in Taipei.",
   },
   {
-    title: "Why a Local Operator Creates Speed",
-    content: "MSI is already teasing Frieren in Taiwan. Without local presence, competitors continue building mindshare on the ground. A local operator monitors, responds, and positions in real time.",
+    title: "Supply Chain Is Already Here",
+    content: "Ducky (Starforge keyboard partner) HQ in Nangang, Taipei. Lian Li (Starforge case supplier) is a Taiwan brand. Two key supply chain partners are already local — the missing layer is go-to-market execution.",
   },
 ];
 
@@ -95,8 +95,8 @@ export default function CompetitorTimeline() {
               className="border border-forge-green/30 bg-forge-green/5 p-4"
               style={{ clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px))" }}
             >
-              <p className="text-sm text-forge-green/80 font-medium">Starforge Systems — 6 Active Anime IP Collabs</p>
-              <p className="text-xs text-forge-green/40 mt-1">Frieren, Chainsaw Man, JJK, Solo Leveling, Kaiju No.8, Apothecary Diaries — no current Asia distribution layer</p>
+              <p className="text-sm text-forge-green/80 font-medium">Starforge Systems — 6+ Active Anime IP Collabs (CES 2026)</p>
+              <p className="text-xs text-forge-green/40 mt-1">Frieren, Chainsaw Man, Apothecary Diaries, JJK, Solo Leveling, Kaiju No.8 — Ducky keyboards manufactured in Taipei, Lian Li cases from Taiwan. No Asia distribution layer.</p>
             </div>
           </div>
         </div>

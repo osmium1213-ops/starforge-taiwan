@@ -22,6 +22,27 @@ const TAIWAN_MARKET_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663401173
 
 const kpiData = [
   {
+    title: "Taiwan Gaming Desktop Market",
+    metric: "$2.3B",
+    context: "43% of $5.3B total gaming PC market. Growing 12.24% CAGR. One of the fastest-growing segments in APAC.",
+    source: "Deep Market Insights / LnData, 2024",
+    detail: "Taiwan's gaming desktop market is valued at USD $2.3 billion (2024), representing 43% of the total $5.3B gaming PC market. CAGR of 12.24% projected through 2030. DIY assembly accounts for over 50% of desktop market.",
+  },
+  {
+    title: "Import Duty on Gaming PCs",
+    metric: "0%",
+    context: "HS 8471 (computers): zero tariff. Total tax burden is only ~5% VAT. One of the lowest entry barriers in APAC.",
+    source: "Taiwan Customs Administration",
+    detail: "Taiwan applies 0% import duty on computers (HS 8471). The only tax is 5% VAT — making total landed cost approximately 5% above US MSRP. Compare: EU ~20% VAT, Australia 10% GST + handling.",
+  },
+  {
+    title: "Anime Collab Full-System Builds",
+    metric: "Zero",
+    context: "No competitor offers full-system anime-branded gaming PCs in Taiwan. Components only (GPU, peripherals).",
+    source: "Market Research, Apr 2026",
+    detail: "While MSI, ASUS ROG, and Razer offer anime-branded components (GPUs, peripherals), no brand offers complete anime-themed gaming PC systems in Taiwan. Starforge's full-system anime builds would be the first in market.",
+  },
+  {
     title: "Bahamut Monthly Traffic",
     metric: "50.5M",
     context: "Desktop visits/month. #6 website in Taiwan. 85.4% Taiwan traffic concentration.",
@@ -29,53 +50,32 @@ const kpiData = [
     detail: "Bahamut (gamer.com.tw) is Taiwan's dominant anime/gaming community — combining streaming, forums, and ACG database. Global rank #266. Average 7.5 pages/visit, 8:42 min session duration.",
   },
   {
+    title: "MSI × Frieren GPU — Sold Out",
+    metric: "8,237 Views",
+    context: "Single GPU page on CoolPC. Sold out. Validates anime × hardware premium demand at full price.",
+    source: "CoolPC Product Page, 2026",
+    detail: "MSI's Frieren-branded GPU generated 8,237 page views on a single CoolPC product listing and sold out. This confirms Taiwanese consumers will pay full premium for anime IP hardware — and that Starforge's Frieren IP has direct market demand here.",
+  },
+  {
+    title: "Frieren IP Demand Index",
+    metric: "30.3×",
+    context: "Parrot Analytics demand index. #1 in Taiwan. Starforge's strongest IP signal in this market.",
+    source: "Parrot Analytics, 2026",
+    detail: "Frieren: Beyond Journey's End shows a demand index of 30.3× in Taiwan according to Parrot Analytics — ranking #1 in the country. This IP also holds a perfect 5.0/5.0 on Bahamut's ACG database.",
+  },
+  {
+    title: "Ducky × Starforge",
+    metric: "Made in Taipei",
+    context: "Ducky manufactures Starforge's anime collab keyboards. HQ in Nangang, Taipei — 2 hours from operator.",
+    source: "CES 2026 Announcement",
+    detail: "At CES 2026, Starforge confirmed Ducky as the manufacturing partner for their anime IP keyboards (Frieren, Chainsaw Man, Apothecary Diaries). Ducky's headquarters is in Nangang, Taipei. Lian Li (Starforge's case supplier) is also a Taiwan brand.",
+  },
+  {
     title: "Starforge Already Discussed",
     metric: "Active Thread",
     context: "\"Taiwan is not in the shipping range.\" Forum thread since Aug 2024, active 8+ months.",
     source: "Bahamut PC_Shopping Forum",
     detail: "Users in the Bahamut PC hardware forum have been discussing Starforge PCs since August 2024. The thread confirms organic interest and frustration with shipping unavailability.",
-  },
-  {
-    title: "Frieren IP Rating",
-    metric: "5.0 / 5.0",
-    context: "#1 seasonal ranking, multiple seasons. Starforge's strongest IP signal in Taiwan.",
-    source: "Bahamut ACG Database",
-    detail: "Frieren: Beyond Journey's End holds a perfect 5.0/5.0 rating on Bahamut's ACG database — the highest possible score. It ranked #1 in its seasonal anime rankings across multiple seasons.",
-  },
-  {
-    title: "Anime Hardware Premium",
-    metric: "NT$17K+",
-    context: "~USD $520 premium observed. ROG × EVA sold out rapidly. \"Hatsune Miku tax\" accepted by community.",
-    source: "PTT PC_Shopping",
-    detail: "PTT users coined the term '初音稅' (Hatsune Miku tax) to describe the premium on anime-branded hardware. ASUS ROG × EVA products sold out within hours. Consumers view the premium as acceptable for IP they care about.",
-  },
-  {
-    title: "Competitor Moving on Frieren",
-    metric: "MSI × Frieren",
-    context: "GPU collaboration teased Feb/Mar 2026. Competitor pursuing Starforge's core IP in Taiwan.",
-    source: "Igor's Lab, Cool3c",
-    detail: "MSI has been teasing a Frieren-branded GPU collaboration in early 2026. This represents a competitive signal for Starforge's Frieren PC line in the Taiwan market.",
-  },
-  {
-    title: "Taiwan Gamers",
-    metric: "15–17M",
-    context: "Active gamers. 27.4% have purchased a gaming PC. #6 globally in mobile game spending.",
-    source: "MIC/III, WifiTalents",
-    detail: "Taiwan has approximately 15–17 million active gamers out of a 23.5M population. 81.4% of internet users game. The market is estimated at NT$126 billion annually.",
-  },
-  {
-    title: "Grey Market Activity",
-    metric: "Not Detected",
-    context: "No meaningful proxy-purchase signal detected across Bahamut, PTT, Dcard, and Threads. Demand exists, but local capture appears limited.",
-    source: "Research, Mar 2026",
-    detail: "Current scan across Taiwan's major gaming forums (Bahamut, PTT, Dcard) and Threads found no meaningful grey market import or proxy purchasing activity for Starforge products — suggesting the market currently has no established local access path.",
-  },
-  {
-    title: "Frieren Exhibition",
-    metric: "Jan–Apr 2026",
-    context: "National Taiwan Science Education Museum. 5 immersive zones. Active cultural moment.",
-    source: "Muse Communication",
-    detail: "The Frieren: Beyond Journey's End exhibition runs January 3 – April 6, 2026 at the National Taiwan Science Education Museum, featuring 5 immersive themed zones. This demonstrates active IP cultural presence in Taiwan.",
   },
 ];
 
@@ -331,12 +331,12 @@ export default function Home() {
 
         <TransitionLine>If the pilot starts, here is what accumulates over time.</TransitionLine>
 
-        {/* Section 9: Timeline Slider */}
+        {/* Section 9: Timeline Slider — 3-Phase GTM */}
         <SectionWrapper id="timeline">
-          <SectionLabel number="09" text="Execution Timeline" />
-          <SectionTitle>What Accumulates Over Time</SectionTitle>
+          <SectionLabel number="09" text="3-Phase GTM" />
+          <SectionTitle>Cross-Border → Platform Listing → Localization</SectionTitle>
           <p className="text-white/55 text-base max-w-2xl mb-10">
-            Every 30 days, the intelligence gets sharper, the community presence grows, and the decision gets clearer.
+            Each phase builds on the previous one. Every step produces data, validates assumptions, and unlocks the next decision point.
           </p>
           <TimelineSlider />
           <SectionCloser>

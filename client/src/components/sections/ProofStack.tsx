@@ -9,13 +9,13 @@ const layers = [
     id: "market",
     label: "MARKET PROOF",
     claim: "Taiwan shows documented demand signals for anime × gaming hardware.",
-    metrics: ["50.5M visits/mo", "5.0/5.0 Frieren rating", "NT$17K premium observed"],
+    metrics: ["$2.3B market", "30.3× Frieren demand", "0% import duty"],
     evidence: [
-      "Bahamut (gamer.com.tw) receives 50.5M desktop visits/month with 85.4% Taiwan traffic concentration — the #6 website in the country.",
-      "Frieren holds a perfect 5.0/5.0 rating on Bahamut's ACG database and ranked #1 in seasonal anime rankings across multiple seasons.",
-      "PTT users coined '初音稅' (Hatsune Miku tax) to describe the observed premium on anime-branded hardware. ROG × EVA sold out within hours.",
-      "No grey market import activity detected across PTT, Dcard, and Mobile01 — suggesting the market currently has no local access path.",
-      "Frieren exhibition running Jan 3 – Apr 6, 2026 at National Taiwan Science Education Museum with 5 immersive zones.",
+      "Taiwan gaming desktop market: $2.3B (2024), 12.24% CAGR. 43% of total gaming PC market. One of the fastest-growing in APAC.",
+      "Frieren demand index 30.3× (Parrot Analytics) — #1 in Taiwan. Perfect 5.0/5.0 on Bahamut ACG database.",
+      "MSI × Frieren GPU: 8,237 page views on CoolPC, sold out. Validates anime × hardware premium demand at full price.",
+      "Import duty 0% (HS 8471). Total tax burden ~5% VAT only. One of the lowest market entry barriers in APAC.",
+      "Ducky manufactures Starforge keyboards in Taipei (CES 2026). Lian Li (Starforge cases) is a Taiwan brand. Supply chain is already local.",
     ],
   },
   {
@@ -27,7 +27,7 @@ const layers = [
       "LINE platform game: 270,000+ game plays across 8M+ user base. Peak 2,000+ requests/second. Full uptime. Client renewed before first wave ended.",
       "Meet Taipei 2024: AI installation with Taiwan's Vice President, Taipei Mayor, and Keelung Mayor. 3-minute window per VIP. No technical failures. VP posted to Instagram Stories.",
       "Government project: Delivered at NTD$50K vs NTD$700K specification — 93% budget saving. Received ministerial commendation.",
-      "All deployments executed under real-time pressure with live audiences and narrow margin for error.",
+      "5 years of vendor compliance and supply chain coordination — directly applicable to Ducky (Nangang, Taipei) and Lian Li local partner management.",
     ],
   },
   {
