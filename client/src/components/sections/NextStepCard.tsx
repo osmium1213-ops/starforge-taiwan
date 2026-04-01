@@ -34,7 +34,7 @@ export default function NextStepCard() {
           Email Jimmy
         </a>
         <a
-          href="https://www.linkedin.com/in/jimmytsai1213/"
+          href="https://www.linkedin.com/in/jimmy-wen-chun-tsai/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-8 py-4 border border-forge-green/40 text-forge-green font-display font-semibold text-sm tracking-wider uppercase hover:bg-forge-green/10 transition-all"
