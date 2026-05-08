@@ -23,12 +23,12 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${HERO_BG})` }}
       />
-      {/* Three.js chassis layer (L3 placeholder) — positioned right side, dimmed */}
-      <div className="absolute inset-0 opacity-50 mix-blend-screen">
-        <HeroCanvas />
-      </div>
       {/* Dark overlay — slightly reduced for better image visibility */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#080808] via-[#080808]/85 to-[#080808]/50 pointer-events-none" />
+      {/* Three.js chassis layer (L3 placeholder, 5/8 verification mode) — full opacity for now */}
+      <div className="absolute inset-0 z-[1] pointer-events-none">
+        <HeroCanvas />
+      </div>
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#080808] to-transparent pointer-events-none" />
 
