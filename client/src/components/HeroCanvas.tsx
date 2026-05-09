@@ -1,40 +1,43 @@
 /**
- * HeroCanvas — L3 Three.js placeholder
- * Status: SCAFFOLDING ONLY (5/8 evening setup)
- * TODO 5/9-5/10: Replace placeholder cube with stylized PC chassis (Voyager III silhouette)
- *                Add particle field background
- *                Wire up scroll-linked rotation/depth
+ * HeroCanvas — Minimal Particle Background
+ * Status: 5/9 v7 — stripped down to particle field + brand wordmark
  *
- * Current implementation: rotating wireframe cube + ambient particles to validate
- * the rendering pipeline (react-three/fiber + drei) works inside the existing Hero layout.
+ * Design decision (5/9 user pivot):
+ * 4-hour 3D chassis iteration hit diminishing returns. Reverting to
+ * enterprise-BD-standard hero composition (text-driven + ambient bg).
+ * Real Starforge product photos will be added in dedicated sections (5/10–5/11)
+ * with proper attribution, instead of a simulated 3D chassis.
+ *
+ * Previous rich-RGB chassis preserved at: _archive/HeroCanvas-v6-rich-rgb.tsx
  */
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 import { useRef } from "react";
-import type { Mesh } from "three";
+import type { Group } from "three";
 
-function PlaceholderChassis() {
-  const meshRef = useRef<Mesh>(null);
+function DriftingField() {
+  // Subtle vertical drift on the star field for organic motion
+  const groupRef = useRef<Group>(null);
 
-  // Slow auto-rotation — to be replaced with scroll-linked rotation in 5/10 iteration
   useFrame((_, delta) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += delta * 0.25;
-      meshRef.current.rotation.x += delta * 0.05;
+    if (groupRef.current) {
+      groupRef.current.rotation.y += delta * 0.02;
+      groupRef.current.rotation.x += delta * 0.005;
     }
   });
 
   return (
-    <mesh ref={meshRef} position={[0, 0, 0]}>
-      {/* Vaguely chassis-shaped: tall rectangular prism */}
-      <boxGeometry args={[1.6, 2.4, 1.6]} />
-      <meshStandardMaterial
-        color="#10b981"
-        wireframe
-        emissive="#10b981"
-        emissiveIntensity={0.2}
+    <group ref={groupRef}>
+      <Stars
+        radius={60}
+        depth={50}
+        count={2200}
+        factor={2.5}
+        saturation={0}
+        fade
+        speed={0.3}
       />
-    </mesh>
+    </group>
   );
 }
 
@@ -42,31 +45,12 @@ export default function HeroCanvas() {
   return (
     <div className="absolute inset-0 pointer-events-none">
       <Canvas
-        camera={{ position: [0, 0, 6], fov: 45 }}
+        camera={{ position: [0, 0, 8], fov: 45 }}
         gl={{ alpha: true, antialias: true }}
         dpr={[1, 2]}
       >
-        {/* Lighting */}
         <ambientLight intensity={0.4} />
-        <pointLight position={[10, 10, 10]} intensity={0.6} />
-        <pointLight position={[-10, -10, -5]} intensity={0.3} color="#10b981" />
-
-        {/* Particle field — drei Stars repurposed as ambient particles */}
-        <Stars
-          radius={50}
-          depth={40}
-          count={1500}
-          factor={2}
-          saturation={0}
-          fade
-          speed={0.5}
-        />
-
-        {/* Placeholder chassis */}
-        <PlaceholderChassis />
-
-        {/* Disabled in production — only enable for dev inspection */}
-        {/* <OrbitControls enableZoom={false} enablePan={false} /> */}
+        <DriftingField />
       </Canvas>
     </div>
   );
