@@ -21,6 +21,14 @@ import ContactSection from "@/components/sections/ContactSection";
 const TAIWAN_MARKET_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663401173585/9uvxcsz6RqAUWNuzyeuoKh/taiwan-market_e7bbb061.png";
 
 const kpiData = [
+  // ─── Headline Row (top 4 — strongest signals, scroll-free visibility) ───
+  {
+    title: "Taipei Game Show 2026",
+    metric: "400,000",
+    context: "Visitors over 4 days. Surpasses Gamescom (373K) and ChinaJoy (367K). Asia's largest gaming consumer event during Chinese New Year peak spend.",
+    source: "TCA / Saiga NAK, Feb 2026",
+    detail: "TGS 2026 set a new attendance record with nearly 400,000 visitors across 4 days at Taipei Nangang Hall 1. Of those, 2,100+ B2B participants from 43 countries with nearly 2,000 matchmaking meetings. Application window for TGS 2027 opens July 2026, closes November 2026. This is one of three Taiwan windows directly addressable in a 90-day pilot.",
+  },
   {
     title: "Taiwan Gaming Desktop Market",
     metric: "$2.3B",
@@ -29,6 +37,22 @@ const kpiData = [
     detail: "Taiwan's gaming desktop market is valued at USD $2.3 billion (2024), representing 43% of the total $5.3B gaming PC market. CAGR of 12.24% projected through 2030. DIY assembly accounts for over 50% of desktop market.",
   },
   {
+    title: "Frieren IP Demand Index",
+    metric: "30.3×",
+    context: "Parrot Analytics demand index. #1 in Taiwan. Starforge's strongest IP signal in this market.",
+    source: "Parrot Analytics, 2026",
+    detail: "Frieren: Beyond Journey's End shows a demand index of 30.3× in Taiwan according to Parrot Analytics — ranking #1 in the country. This IP also holds a perfect 5.0/5.0 on Bahamut's ACG database. Important nuance: MSI has already executed a Frieren hardware collaboration in this market — IP territory considerations are worth discussing in call.",
+  },
+  {
+    title: "Bahamut Frieren Rating",
+    metric: "5.0 / 5.0",
+    context: "57,782 user reviews. Zero negative. Highest-rated anime on Taiwan's #1 ACG database.",
+    source: "Bahamut ACG Database (gamer.com.tw), 2026",
+    detail: "Frieren holds a perfect 5.0/5.0 user rating on Bahamut — Taiwan's dominant anime/gaming database with 50.5M monthly desktop visits. The rating reflects 57,782 individual reviews with no recorded dissatisfaction signal. A 3-month museum exhibition at the National Taiwan Science Education Center (Jan–Apr 2026) confirmed offline demand activation.",
+  },
+
+  // ─── Supporting Row (4 more — context + validation) ───
+  {
     title: "Import Duty on Gaming PCs",
     metric: "0%",
     context: "HS 8471 (computers): zero tariff. Total tax burden is only ~5% VAT. One of the lowest entry barriers in APAC.",
@@ -36,11 +60,18 @@ const kpiData = [
     detail: "Taiwan applies 0% import duty on computers (HS 8471). The only tax is 5% VAT — making total landed cost approximately 5% above US MSRP. Compare: EU ~20% VAT, Australia 10% GST + handling.",
   },
   {
-    title: "Anime Collab Full-System Builds",
+    title: "Anime Full-System Builds",
     metric: "Zero",
-    context: "No competitor offers full-system anime-branded gaming PCs in Taiwan. Components only (GPU, peripherals).",
+    context: "No competitor offers full-system anime-branded gaming PCs in Taiwan. MSI / ROG / Razer compete in components only.",
     source: "Market Research, Apr 2026",
-    detail: "While MSI, ASUS ROG, and Razer offer anime-branded components (GPUs, peripherals), no brand offers complete anime-themed gaming PC systems in Taiwan. Starforge's full-system anime builds would be the first in market.",
+    detail: "MSI, ASUS ROG, and Razer offer anime-branded GPUs, keyboards, mice, and mousepads ($200–$800 range). None offer complete anime-themed gaming PC systems. Starforge's $2,549 full-system anime builds enter an empty product category.",
+  },
+  {
+    title: "MSI × Frieren — Sold Out",
+    metric: "8,237 Views",
+    context: "Single GPU page on CoolPC sold out. Validates anime × hardware premium demand at full price.",
+    source: "CoolPC Product Page, 2026",
+    detail: "MSI's Frieren-branded GPU generated 8,237 page views on a single CoolPC product listing and sold out. This confirms Taiwanese consumers will pay full premium for anime IP hardware — though the GPU sliver is now MSI's. The complete-system slice remains open.",
   },
   {
     title: "Bahamut Monthly Traffic",
@@ -48,34 +79,6 @@ const kpiData = [
     context: "Desktop visits/month. #6 website in Taiwan. 85.4% Taiwan traffic concentration.",
     source: "SimilarWeb, Feb 2026",
     detail: "Bahamut (gamer.com.tw) is Taiwan's dominant anime/gaming community — combining streaming, forums, and ACG database. Global rank #266. Average 7.5 pages/visit, 8:42 min session duration.",
-  },
-  {
-    title: "MSI × Frieren GPU — Sold Out",
-    metric: "8,237 Views",
-    context: "Single GPU page on CoolPC. Sold out. Validates anime × hardware premium demand at full price.",
-    source: "CoolPC Product Page, 2026",
-    detail: "MSI's Frieren-branded GPU generated 8,237 page views on a single CoolPC product listing and sold out. This confirms Taiwanese consumers will pay full premium for anime IP hardware — and that Starforge's Frieren IP has direct market demand here.",
-  },
-  {
-    title: "Frieren IP Demand Index",
-    metric: "30.3×",
-    context: "Parrot Analytics demand index. #1 in Taiwan. Starforge's strongest IP signal in this market.",
-    source: "Parrot Analytics, 2026",
-    detail: "Frieren: Beyond Journey's End shows a demand index of 30.3× in Taiwan according to Parrot Analytics — ranking #1 in the country. This IP also holds a perfect 5.0/5.0 on Bahamut's ACG database.",
-  },
-  {
-    title: "Ducky × Starforge",
-    metric: "HQ in Taipei",
-    context: "Ducky is Starforge's keyboard partner — a Taiwan brand headquartered in Nangang, Taipei. 2 hours from operator.",
-    source: "CES 2026 Announcement",
-    detail: "At CES 2026, Starforge confirmed Ducky as the keyboard partner for their anime IP collabs (Frieren, Chainsaw Man, Apothecary Diaries). Ducky is a Taiwan-based brand with headquarters in Nangang, Taipei. Lian Li (Starforge's case supplier) is also a Taiwan brand.",
-  },
-  {
-    title: "Starforge Already Discussed",
-    metric: "Active Thread",
-    context: "\"Taiwan is not in the shipping range.\" Forum thread since Aug 2024, active 8+ months.",
-    source: "Bahamut PC_Shopping Forum",
-    detail: "Users in the Bahamut PC hardware forum have been discussing Starforge PCs since August 2024. The thread confirms organic interest and frustration with shipping unavailability.",
   },
 ];
 
