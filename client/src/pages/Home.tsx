@@ -41,7 +41,7 @@ const kpiData = [
     metric: "30.3×",
     context: "Parrot Analytics demand index. #1 in Taiwan. Starforge's strongest IP signal in this market.",
     source: "Parrot Analytics, 2026",
-    detail: "Frieren: Beyond Journey's End shows a demand index of 30.3× in Taiwan according to Parrot Analytics — ranking #1 in the country. This IP also holds a perfect 5.0/5.0 on Bahamut's ACG database. Important nuance: MSI has already executed a Frieren hardware collaboration in this market — IP territory considerations are worth discussing in call.",
+    detail: "Frieren: Beyond Journey's End shows a demand index of 30.3× in Taiwan — ranking #1 in the country. Also holds a perfect 5.0/5.0 on Bahamut. Path to Taiwan Frieren IP: Asia merchandise rights moved to a TOHO Entertainment Asia × Muse Communication co-license framework on Jan 19, 2026. MSI launched the first Asia hardware collab under this framework on Mar 10, 2026. Starforge's existing Frieren PC (COMPUTEX 2025) appears US-scoped — extending to Taiwan is a focused-conversation question, not a Crunchyroll one.",
   },
   {
     title: "Bahamut Frieren Rating",
@@ -230,10 +230,10 @@ export default function Home() {
           {/* Impact Metrics */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "SCALE", metric: "8M+ Users", sub: "2,000+ RPS", detail: "LINE platform infrastructure. Full uptime under peak load. Client renewed." },
-              { label: "FRAMEWORKS", metric: "66.7%", sub: "Completion Rate", detail: "Reusable engagement framework. ~3× industry avg. APAC Summit invite." },
-              { label: "EFFICIENCY", metric: "93%", sub: "Budget Saving", detail: "Gov project. NTD$50K vs NTD$700K spec. Ministerial commendation." },
-              { label: "HIGH-STAKES", metric: "VP-Level", sub: "Deployment", detail: "Meet Taipei 2024 AI installation. Senior leadership participated. No errors." },
+              { label: "SCALE", metric: "8M+ Users", sub: "50K players · 300K sessions", detail: "Gamified loyalty campaign on a LINE OA platform with 8M reachable users. Drove 50,000 unique players and 300,000 play sessions in the first wave. Full uptime under peak load." },
+              { label: "RETENTION", metric: "2nd Wave", sub: "Renewed by client", detail: "Same campaign renewed for a second wave: 30,000 players + 230,000 sessions. Client renewal = independent proof of ROI, not self-reported metrics." },
+              { label: "EFFICIENCY", metric: "93%", sub: "Budget Saving", detail: "Government digital transformation exhibition. Original outsourced budget NTD$700K → delivered for under NTD$50K by substituting generative AI for animation production. Ministry recognized the result." },
+              { label: "HIGH-STAKES", metric: "700", sub: "Hands-on demos · 3 days", detail: "Meet Taipei 2024 (Taiwan's largest startup expo) AI interactive demo zone. PM + Sales role. 700 hands-on participants in 3 days, zero paid acquisition. Also led similar program at Kaohsiung Museum of Fine Arts." },
             ].map((item) => (
               <div
                 key={item.label}

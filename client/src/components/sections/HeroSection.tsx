@@ -1,10 +1,13 @@
 /**
  * Section 1: Hero / Decision Thesis
  * Full-viewport hero with headline, subheadline, and 4 CTA buttons
- * Background: generated hero image with dark overlay + Three.js chassis layer (L3 in-progress)
+ * Background: generated hero image (circuit pattern) with dark gradient overlay
+ *
+ * 2026-05-12: Three.js HeroCanvas removed — drei/fiber/three triple was creating
+ * R3F context loss errors and not adding meaningful signal. The hero bg image
+ * already provides the necessary visual depth.
  */
 import { motion } from "framer-motion";
-import HeroCanvas from "@/components/HeroCanvas";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663401173585/9uvxcsz6RqAUWNuzyeuoKh/hero-bg_c5e8d608.png";
 
@@ -25,10 +28,6 @@ export default function HeroSection() {
       />
       {/* Dark overlay — slightly reduced for better image visibility */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#080808] via-[#080808]/85 to-[#080808]/50 pointer-events-none" />
-      {/* Three.js chassis layer (L3 placeholder, 5/8 verification mode) — full opacity for now */}
-      <div className="absolute inset-0 z-[1] pointer-events-none">
-        <HeroCanvas />
-      </div>
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#080808] to-transparent pointer-events-none" />
 
