@@ -83,8 +83,9 @@ const kpiData = [
 ];
 
 export default function Home() {
+  // 2026-05-14 P2: removed bg-[#080808] from wrapper so body atmosphere (radial glow + blueprint grid) shows through
   return (
-    <div className="min-h-screen bg-[#080808] text-white">
+    <div className="min-h-screen text-white">
       <SideNav />
 
       {/* Main content area — offset for side nav on desktop */}

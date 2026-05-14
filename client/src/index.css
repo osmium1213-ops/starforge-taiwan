@@ -46,8 +46,12 @@
   --color-forge-dark: oklch(0.13 0.005 285);
   --color-forge-card: oklch(0.19 0.005 285);
   --color-forge-surface: oklch(0.22 0.005 285);
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  /* 2026-05-14: Typography overhaul per Claude Web Design Cheat Sheet
+     - Space Grotesk was flagged as overused AI-default → swapped to Bricolage Grotesque (distinctive, variable 200-800)
+     - Inter is on the avoid-list → swapped to IBM Plex Sans (technical but not generic)
+     - JetBrains Mono kept (still recommended) */
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
@@ -94,6 +98,19 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    /* 2026-05-14 P2: Background atmosphere — replaces flat black with a triple-layer scene:
+       1. Subtle radial green glow at top-left (depth + brand-tied accent)
+       2. Faint counter-glow at bottom-right (visual balance)
+       3. Blueprint grid (1% opacity) — engineering-brief aesthetic, ties to "Forge Interface" theme
+       Each layer is fixed-positioned so it doesn't scroll with content. */
+    background-color: #050505;
+    background-image:
+      radial-gradient(ellipse 60% 55% at 0% 0%, rgba(16, 185, 129, 0.18) 0%, transparent 55%),
+      radial-gradient(ellipse 55% 45% at 100% 100%, rgba(16, 185, 129, 0.12) 0%, transparent 55%),
+      linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 56px 56px, 56px 56px;
+    background-attachment: fixed, fixed, fixed, fixed;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

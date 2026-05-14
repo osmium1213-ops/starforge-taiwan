@@ -21,7 +21,7 @@ export default function SectionWrapper({ id, children, className = "", dark = fa
     <section
       id={id}
       ref={ref}
-      className={`relative ${dark ? "bg-[#0d0d0d]" : "bg-[#080808]"} ${noPadding ? "" : "py-20 md:py-28"} ${className}`}
+      className={`relative ${dark ? "bg-black/30 backdrop-blur-[2px]" : "bg-transparent"} ${noPadding ? "" : "py-20 md:py-28"} ${className}`}
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
