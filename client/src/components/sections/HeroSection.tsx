@@ -62,7 +62,7 @@ export default function HeroSection() {
               hidden: { opacity: 0, y: 24 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] } },
             }}
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.04] tracking-tight max-w-4xl mb-6"
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.04] tracking-tight max-w-4xl mb-6"
           >
             <span className="text-white">Starforge Has the IP. Taiwan Has the Demand.</span>
             <br />

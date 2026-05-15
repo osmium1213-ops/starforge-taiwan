@@ -46,11 +46,10 @@
   --color-forge-dark: oklch(0.13 0.005 285);
   --color-forge-card: oklch(0.19 0.005 285);
   --color-forge-surface: oklch(0.22 0.005 285);
-  /* 2026-05-14: Typography overhaul per Claude Web Design Cheat Sheet
-     - Space Grotesk was flagged as overused AI-default → swapped to Bricolage Grotesque (distinctive, variable 200-800)
-     - Inter is on the avoid-list → swapped to IBM Plex Sans (technical but not generic)
-     - JetBrains Mono kept (still recommended) */
-  --font-display: 'Bricolage Grotesque', sans-serif;
+  /* 2026-05-14: Typography overhaul — IBM Plex Sans body + JetBrains Mono kept.
+     2026-05-15: Reverted display font Bricolage Grotesque → Space Grotesk.
+     Bricolage rendered too round/chunky at large hero sizes on Windows. */
+  --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'IBM Plex Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
