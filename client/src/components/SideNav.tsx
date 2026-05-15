@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 const sections = [
   { id: "hero", label: "BRIEF", short: "01" },
   { id: "why-now", label: "WHY NOW", short: "02" },
+  { id: "trade-shows", label: "TRADE SHOWS", short: "02.5" },
   { id: "why-local", label: "LOCAL OPS", short: "03" },
   { id: "why-jimmy", label: "OPERATOR", short: "04" },
   { id: "proof-stack", label: "EVIDENCE", short: "05" },

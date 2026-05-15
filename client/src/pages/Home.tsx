@@ -17,6 +17,7 @@ import AiOffice from "@/components/sections/AiOffice";
 import CaseCards from "@/components/sections/CaseCards";
 import NextStepCard from "@/components/sections/NextStepCard";
 import ContactSection from "@/components/sections/ContactSection";
+import TradeShowGantt from "@/components/sections/TradeShowGantt";
 
 const TAIWAN_MARKET_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663401173585/9uvxcsz6RqAUWNuzyeuoKh/taiwan-market_e7bbb061.png";
 
@@ -122,7 +123,22 @@ export default function Home() {
           </SectionCloser>
         </SectionWrapper>
 
-        <TransitionLine>The signal is visible. The question is who can act on it — and from where.</TransitionLine>
+        <TransitionLine>The signal is visible. Here are the windows to act on it.</TransitionLine>
+
+        {/* Section 2.5: Trade Show Gantt */}
+        <SectionWrapper id="trade-shows">
+          <SectionLabel number="02.5" text="Three Windows Closing" />
+          <SectionTitle>Taiwan's Event Calendar Has Built-In Deadlines</SectionTitle>
+          <p className="text-white/55 text-base max-w-2xl mb-10">
+            Seven trade shows across 12 months. Three have direct Phase 1 alignment. Sponsor outreach windows are closing — this is not a someday opportunity.
+          </p>
+          <TradeShowGantt />
+          <SectionCloser>
+            Three windows are closing. The calendar does not wait for internal alignment.
+          </SectionCloser>
+        </SectionWrapper>
+
+        <TransitionLine>The windows are closing. The question is who can act on them — and from where.</TransitionLine>
 
         {/* Section 3: Why Local Operator */}
         <SectionWrapper id="why-local">
